@@ -13,7 +13,7 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 
-@Mojo(name = "eval", requiresProject = false)
+@Mojo(name = "eval", requiresProject = false, threadSafe = true)
 public class EvalMojo extends AbstractMojo {
 
 	@Parameter(required=true, property="script")
