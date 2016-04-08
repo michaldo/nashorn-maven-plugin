@@ -48,12 +48,13 @@ public class EvalMojo extends AbstractMojo {
 		scriptEngine.put("$reactorProjects", mavenSession.getProjects());
 		scriptEngine.put("$repositorySystemSession", mavenSession.getRepositorySession());
 		scriptEngine.put("$executedProject", project.getExecutionProject());
-		scriptEngine.put("$basedir", mavenSession.getExecutionRootDirectory());
+		scriptEngine.put("$basedir", project.getBasedir());
 		
+		String jsCode =  "(function(){" + script + "})()"; //function gives "if (..) return"
 		try {
-			scriptEngine.eval(script);
+			scriptEngine.eval(jsCode);
 		} catch (final ScriptException se) {
-			throw new MojoExecutionException(script, se);
+			throw new MojoExecutionException(jsCode, se);
 		}
 	}
 }
