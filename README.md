@@ -39,7 +39,7 @@ Nashorn  way:
     <plugin>
       <groupId>io.github.michaldo</groupId>
       <artifactId>nashorn-maven-plugin</artifactId>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
       <executions>
         <execution>
           <phase>process-resources</phase>
@@ -72,7 +72,7 @@ only for war module. For Ant it's impossible, huh? For Nashorn it is pretty easy
     <plugin>
       <groupId>io.github.michaldo</groupId>
       <artifactId>nashorn-maven-plugin</artifactId>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
       <executions>
         <execution>
           <phase>process-resources</phase>
@@ -104,7 +104,7 @@ only for war module. For Ant it's impossible, huh? For Nashorn it is pretty easy
 <plugin>
   <groupId>io.github.michaldo</groupId>
   <artifactId>nashorn-maven-plugin</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <executions>
     <execution>
       <phase>initialize</phase>
