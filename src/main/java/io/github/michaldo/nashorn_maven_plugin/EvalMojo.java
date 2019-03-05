@@ -37,7 +37,8 @@ public class EvalMojo extends AbstractMojo {
 			return;
 		}
 
-		ScriptEngineManager scriptEngineManager = new ScriptEngineManager();
+		ScriptEngineManager scriptEngineManager = 
+				new ScriptEngineManager(ClassLoader.getSystemClassLoader());
 		ScriptEngine scriptEngine = scriptEngineManager.getEngineByName("nashorn");
 		scriptEngine.put("$project", project);
 		scriptEngine.put("$mojo", mojoExecution);
