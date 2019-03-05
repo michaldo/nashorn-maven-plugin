@@ -4,7 +4,7 @@
 
 	<groupId>io.github.michaldo</groupId>
 	<artifactId>nashorn-maven-plugin</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>nashorn-maven-plugin Maven Plugin</name>
